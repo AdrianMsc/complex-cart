@@ -72,26 +72,17 @@
 
     <section class="container grid grid-cols-12 gap-2 mx-auto p-3">
       <div class="lg:col-span-9 md:col-span-9 col-span-12">
+        <!-- Cart Title -->
         <div class="min-w-full mx-auto">
           <div class="flex justify-between">
             <div class="flex gap-3 align-center items-end">
               <h2 class="text-2xl font-extrabold">Your Cart</h2>
               <span class="text-base font-bold">4 Items</span>
             </div>
-            <!-- Component 3 -->
-            <div class="xl:hidden flex bg-white mt-4 rounded">
+            <!-- Cart Options -->
+            <div class="hidden xl:flex bg-white mt-4">
               <button
-                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
-              >
-                <p class="font-normal text-sm text-[#212121]/[0.64]">
-                  Cart Options
-                </p>
-                <img src="./img/ellipsis-vertical.svg" class="h-3" />
-              </button>
-            </div>
-            <div class="hidden xl:flex bg-white mt-4 rounded">
-              <button
-                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:text-[#212121]"
               >
                 <img src="./img/save.svg" class="w-3" />
                 <p class="font-normal text-sm text-[#212121]/[0.6]">
@@ -102,19 +93,25 @@
                 >|</span
               >
               <button
-                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
               >
                 <img src="./img/print.svg" class="w-3" />
-                <p class="font-normal text-sm text-[#212121]/[0.64]">Print</p>
+                <p
+                  class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                >
+                  Print
+                </p>
               </button>
               <span class="flex items-center text-[#212121]/[0.64] mb-0.5"
                 >|</span
               >
               <button
-                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
               >
                 <img src="./img/add.svg" class="w-3" />
-                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                <p
+                  class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                >
                   Add to List
                 </p>
               </button>
@@ -122,10 +119,12 @@
                 >|</span
               >
               <button
-                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
               >
                 <img src="./img/download.svg" class="w-3" />
-                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                <p
+                  class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                >
                   Download Cart
                 </p>
               </button>
@@ -133,10 +132,12 @@
                 >|</span
               >
               <button
-                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
               >
                 <img src="./img/receipt.svg" class="w-3" />
-                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                <p
+                  class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                >
                   Request a Quote
                 </p>
               </button>
@@ -144,26 +145,119 @@
                 >|</span
               >
               <button
-                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
               >
                 <img src="./img/share.svg" class="w-3" />
-                <p class="font-normal text-sm text-[#212121]/[0.64]">Share</p>
+                <p
+                  class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                >
+                  Share
+                </p>
               </button>
               <span class="flex items-center text-[#212121]/[0.64] mb-0.5"
                 >|</span
               >
               <button
-                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
               >
                 <img src="./img/trash.svg" class="w-3" />
-                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                <p
+                  class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                >
                   Clear Cart
                 </p>
               </button>
             </div>
+            <div id="co-button" class="xl:hidden flex bg-white mt-4">
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
+              >
+                <p
+                  class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                >
+                  Cart Options
+                </p>
+                <img src="./img/ellipsis-vertical.svg" class="h-3" />
+              </button>
+              <!-- CO Responsive -->
+              <div
+                id="responsive-menu"
+                class="hidden w-[160px] min-h-min bg-white px-0.5 rounded absolute mt-11 right-0"
+              >
+                <button
+                  class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
+                >
+                  <img src="./img/save.svg" class="w-3" />
+                  <p
+                    class="font-normal text-sm text-[#212121]/[0.6] hover:text-[#212121]"
+                  >
+                    Save Cart
+                  </p>
+                </button>
+                <button
+                  class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
+                >
+                  <img src="./img/print.svg" class="w-3" />
+                  <p
+                    class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                  >
+                    Print
+                  </p>
+                </button>
+                <button
+                  class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
+                >
+                  <img src="./img/add.svg" class="w-3" />
+                  <p
+                    class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                  >
+                    Add to List
+                  </p>
+                </button>
+                <button
+                  class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
+                >
+                  <img src="./img/download.svg" class="w-3" />
+                  <p
+                    class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                  >
+                    Download Cart
+                  </p>
+                </button>
+                <button
+                  class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
+                >
+                  <img src="./img/receipt.svg" class="w-3" />
+                  <p
+                    class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                  >
+                    Request a Quote
+                  </p>
+                </button>
+                <button
+                  class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
+                >
+                  <img src="./img/share.svg" class="w-3" />
+                  <p
+                    class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                  >
+                    Share
+                  </p>
+                </button>
+                <button
+                  class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center"
+                >
+                  <img src="./img/trash.svg" class="w-3" />
+                  <p
+                    class="font-normal text-sm text-[#212121]/[0.64] hover:text-[#212121]"
+                  >
+                    Clear Cart
+                  </p>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-
         <article class="bg-white rounded overflow-hidden p-5 mt-5">
           <h4 class="font-bold flex">
             <label class="inline-flex items-center cursor-pointer">
@@ -562,19 +656,6 @@
       </div>
     </section>
 
-    <script>
-      const orderLevelCostLocationForm = document.getElementById(
-        "orderLevelContentForm"
-      );
-      const orderLevelCostLocationSwitch = document.getElementById(
-        "costLocationToggler"
-      );
-
-      toggleContent = () =>
-        (orderLevelCostLocationForm.style.display =
-          orderLevelCostLocationSwitch.checked ? "block" : "none");
-
-      orderLevelCostLocationSwitch.addEventListener("change", toggleContent);
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
