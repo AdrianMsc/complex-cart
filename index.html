@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      href="https://www.mscdirect.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>MSC POC</title>
+  </head>
+  <body class="bg-[#f2f2f2]">
+    <header class="bg-white overflow-hidden shadow-lg p-5 flex w-full">
+      <a href="index.html">
+        <img
+          class="h-[40px]"
+          src="https://cdn.mscdirect.com/global/v2/img/header/msc-logo.svg"
+          alt=""
+        />
+      </a>
+    </header>
+
+    <nav class="bg-white border">
+      <ul class="flex font-bold pl-2">
+        <li class="mr-3 p-3">Products</li>
+        <li class="mr-3 p-3">Solutions</li>
+        <li class="mr-3 p-3">Resources</li>
+        <li class="mr-3 p-3">Sepcial Offers</li>
+        <li class="mr-3 p-3">Catalogs</li>
+        <li class="mr-3 p-3">Better MRO</li>
+      </ul>
+    </nav>
+
+    <div class="h-12 flex text-white bg-[#18436A] justify-center items-center">
+      <img src="img/sparkles.svg" class="inline-block w-5 mr-[11px] sm:w-6" />
+      <div
+        class="flex-row truncate min-h-full w-[213px] content-center sm:flex sm:w-min sm:items-center"
+      >
+        <p class="inline text-[10px] font-bold sm:text-sm">
+          Unlock a smoother shopping journey -
+        </p>
+        <p class="text-[10px] font-bold sm:text-sm sm:ml-1 sm:inline">
+          Flip the switch to our new beta checkout!
+        </p>
+      </div>
+
+      <div class="inline-block ml-[11px]">
+        <label
+          for="toggleFour"
+          class="flex items-center cursor-pointer select-none"
+        >
+          <div class="relative">
+            <input
+              type="checkbox"
+              id="toggleFour"
+              checked
+              class="peer sr-only"
+            />
+            <div
+              before="Yes"
+              class="h-6 w-[60px] rounded-full box bg-[#18436A] peer-checked:bg-[#186DF5] peer-checked:before:content-[attr(before)] text-xs before:absolute before:top-[3px] before:pl-2.5"
+            ></div>
+            <div
+              class="absolute flex items-center justify-center w-4 h-4 transition bg-white rounded-full dot left-1 top-1 peer-checked:translate-x-full pt-1 peer-checked:ml-4"
+            ></div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <section class="container grid grid-cols-12 gap-2 mx-auto">
+      <div class="col-span-9">
+        <div class="min-w-full mx-auto">
+          <div class="flex justify-between">
+            <div class="flex gap-3 align-center items-end">
+              <h2 class="text-2xl font-extrabold">Your Cart</h2>
+              <span class="text-base font-bold">4 Items</span>
+            </div>
+            <!-- Component 3 -->
+            <div class="xl:hidden flex bg-white mt-4 rounded">
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+              >
+                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                  Cart Options
+                </p>
+                <img src="./img/ellipsis-vertical.svg" class="h-3" />
+              </button>
+            </div>
+            <div class="hidden xl:flex bg-white mt-4 rounded">
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+              >
+                <img src="./img/save.svg" class="w-3" />
+                <p class="font-normal text-sm text-[#212121]/[0.6]">
+                  Save Cart
+                </p>
+              </button>
+              <span class="flex items-center text-[#212121]/[0.64] mb-0.5"
+                >|</span
+              >
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+              >
+                <img src="./img/print.svg" class="w-3" />
+                <p class="font-normal text-sm text-[#212121]/[0.64]">Print</p>
+              </button>
+              <span class="flex items-center text-[#212121]/[0.64] mb-0.5"
+                >|</span
+              >
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+              >
+                <img src="./img/add.svg" class="w-3" />
+                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                  Add to List
+                </p>
+              </button>
+              <span class="flex items-center text-[#212121]/[0.64] mb-0.5"
+                >|</span
+              >
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+              >
+                <img src="./img/download.svg" class="w-3" />
+                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                  Download Cart
+                </p>
+              </button>
+              <span class="flex items-center text-[#212121]/[0.64] mb-0.5"
+                >|</span
+              >
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+              >
+                <img src="./img/receipt.svg" class="w-3" />
+                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                  Request a Quote
+                </p>
+              </button>
+              <span class="flex items-center text-[#212121]/[0.64] mb-0.5"
+                >|</span
+              >
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+              >
+                <img src="./img/share.svg" class="w-3" />
+                <p class="font-normal text-sm text-[#212121]/[0.64]">Share</p>
+              </button>
+              <span class="flex items-center text-[#212121]/[0.64] mb-0.5"
+                >|</span
+              >
+              <button
+                class="flex max-h-10 py-[13px] px-2.5 gap-1.5 items-center hover:bg-[#E5E7EB]"
+              >
+                <img src="./img/trash.svg" class="w-3" />
+                <p class="font-normal text-sm text-[#212121]/[0.64]">
+                  Clear Cart
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <article class="bg-white rounded overflow-hidden p-5 mt-5">
+          <h4 class="font-bold flex">
+            <label class="inline-flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                value=""
+                class="sr-only peer"
+                id="costLocationToggler"
+              />
+              <div
+                class="relative w-9 h-5 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+              <span
+                class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+              ></span>
+            </label>
+            Order-Level Cost Allocation
+          </h4>
+
+          <form id="orderLevelContentForm" class="hidden mt-5">
+            <div class="grid gird-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-2">
+              <select
+                id="countries"
+                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+              >
+                <option selected>Category 1</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+              </select>
+
+              <select
+                id="countries"
+                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+              >
+                <option selected>Category 2</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+              </select>
+
+              <select
+                id="countries"
+                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+              >
+                <option selected>Category 3</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+              </select>
+
+              <select
+                id="countries"
+                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+              >
+                <option selected>Category 4</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+              </select>
+
+              <select
+                id="countries"
+                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+              >
+                <option selected>Category 5</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+                <option>Category Option</option>
+              </select>
+            </div>
+
+            <div class="flex justify-center bg-red mt-5">
+              <button
+                type="button"
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-10 py-1.5 me-2 mb-2"
+              >
+                Apply to all
+              </button>
+            </div>
+          </form>
+        </article>
+
+        <article class="bg-white rounded overflow-hidden mt-5">
+          <div class="flex grid grid-cols-12 py-3 px-5">
+            <div class="col-span-2">
+              <img src="./img/cachucha.png" alt="" class="w-[80%]" />
+            </div>
+            <div class="col-span-7">
+              <p class="font-bold text-[12px]">BRAND NAME</p>
+
+              <p class="font-bold text-[14px]">
+                This is a long text that can wrap into multiple lines, this can
+                take the entire product name
+              </p>
+
+              <p class="text-[14px]">
+                MSC# <span>10237758</span> Mfr# <span>10237758</span>
+              </p>
+
+              <p class="text-[14px]">
+                <img src="" alt="" />
+                <span class="text-[#0E754A] font-bold"> In Stock </span>
+                • Expected to arrive on
+                <span class="font-bold">Thurs, June 9th</span>
+              </p>
+
+              <p class="text-[#0D3AA9] text-[12px] font-bold">
+                Compliance & Restrictions
+              </p>
+
+              <div class="flex items-center text-[13px]">
+                <span class="mr-2">Tax Exempt</span>
+
+                <label
+                  for="toggleTax"
+                  class="flex items-center cursor-pointer select-none text-white mt-1"
+                >
+                  <div class="relative">
+                    <input
+                      type="checkbox"
+                      id="toggleTax"
+                      checked
+                      class="peer sr-only"
+                    />
+                    <div
+                      before="Yes"
+                      class="h-6 w-[60px] rounded-full box bg-[#18436A] peer-checked:bg-[#186DF5] peer-checked:before:content-[attr(before)] text-xs before:absolute before:top-[3px] before:pl-2.5"
+                    ></div>
+                    <div
+                      class="absolute flex items-center justify-center w-4 h-4 transition bg-white rounded-full dot left-1 top-1 peer-checked:translate-x-full pt-1 peer-checked:ml-4"
+                    ></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-span-3">
+              <div class="flex flex-col h-2/4">
+                <p class="flex text-[13px]">
+                  Web Price
+                  <span class="ml-auto">
+                    $5.63
+                    <small>ea</small>
+                  </span>
+                </p>
+
+                <p class="font-bold flex text-[13px]">
+                  Total
+                  <span class="ml-auto"> $22.56 </span>
+                </p>
+              </div>
+
+              <div class="flex justify-center items-center h-2/4 p-2">
+                <div
+                  class="bg-[#F1F5FE] p-2 flex items-center justify-center w-full rounded"
+                >
+                  <span class="font-bold mr-2">Quantity</span>
+                  <input
+                    type="text"
+                    class="border rounded py-2 text-center max-w-[110px] h-[26px]"
+                    placeholder="1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex text-[14px] font-bold py-[0.8rem] px-[1.25rem] border"
+          >
+            <button class="flex items-center text-[#212121]/[.64]">
+              <img src="./img/add-routing.svg" class="mr-2" alt="" />
+              Add a Routing Note
+            </button>
+            <button class="flex items-center ml-auto text-[#212121]/[.64]">
+              <img src="./img/plus.svg" class="mr-2" alt="" />
+              Add to List
+            </button>
+            <button class="flex items-center text-[#212121]/[.64] ml-5">
+              <img src="./img/delete.svg" class="mr-2" alt="" />
+              Delete
+            </button>
+          </div>
+
+          <div class="px-5 py-3 flex">
+            <p class="font-bold flex items-center text-[13px]">
+              Item-Level Cost Allocation
+              <img src="./img/info-question.svg" class="ml-2 w-3" alt="" />
+            </p>
+
+            <div class="ml-auto flex items-center">
+              <span class="mr-3 text-[13px]">Override Order Level</span>
+
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  value=""
+                  class="sr-only peer"
+                  id="costLocationToggler"
+                />
+                <div
+                  class="relative w-9 h-5 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+                <span
+                  class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                ></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-2 px-5 py-3">
+            <div class="col-span-2 flex">
+              <label for="" class="font-bold mr-3">Qty</label>
+              <input
+                type="text"
+                class="border rounded w-full text-center"
+                value="1"
+              />
+            </div>
+
+            <select class="border rounded col-span-2 text-sm">
+              <option value="1">Category 1</option>
+            </select>
+            <select class="border rounded col-span-2 text-sm">
+              <option value="1">Category 1</option>
+            </select>
+            <select class="border rounded col-span-2 text-sm">
+              <option value="1">Category 1</option>
+            </select>
+            <select class="border rounded col-span-2 text-sm">
+              <option value="1">Category 1</option>
+            </select>
+            <select class="border rounded col-span-2 text-sm">
+              <option value="1">Category 1</option>
+            </select>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-span-3">
+        <article
+          class="bg-white rounded overflow-hidden shadow-lg p-2 flex w-full mt-4"
+        >
+          <span class="flex w-full">
+            <svg
+              class="w-6 h-6 text-[#212121]/[.64] mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <span class="truncate w-4/5 text-sm">
+              Street Address, State, tax Exempt, other things here like this or
+              more
+            </span>
+
+            <a href="" class="ml-auto"
+              ><b class="text-[#0D3AA9] text-sm">Change</b></a
+            >
+          </span>
+        </article>
+
+        <!-- Order Sumary -->
+        <div class="w-full bg-white m-auto p-6 rounded mt-5">
+          <div class="flex-row">
+            <div class="flex justify-between mb-4">
+              <p class="inline text-sm font-normal">Item Total</p>
+              <span class="text-sm font-normal">$111.21</span>
+            </div>
+            <div class="flex justify-between mb-4">
+              <p class="inline text-sm font-normal">Savings</p>
+              <span class="text-sm font-normal">-$27.50</span>
+            </div>
+            <div class="flex justify-between mb-4">
+              <div class="items-center">
+                <p class="inline pr-1 text-sm font-normal">Ship to 78753</p>
+                <img
+                  src="info question.svg"
+                  class="inline w-4 cursor-pointer"
+                />
+                <a
+                  class="inline pl-1 text-sm font-bold text-[#0D3AA9] cursor-pointer"
+                  >Edit</a
+                >
+              </div>
+              <span class="text-sm font-normal">$17.99</span>
+            </div>
+            <div class="flex justify-between mb-5">
+              <p class="inline text-sm font-bold">Sub Total</p>
+              <span class="text-lg font-extrabold">$134.20</span>
+            </div>
+          </div>
+          <div class="flex-row border-t-2">
+            <select
+              name=""
+              id=""
+              class="min-w-full text-sm font-normal mt-4 p-2 border rounded border-[#A4A4A4] text-[#212121A3]/[0.64]"
+            >
+              <option disabled selected value="" class="text-sm font-normal">
+                Select a Buyer
+              </option>
+            </select>
+            <textarea
+              type="text"
+              name=""
+              id=""
+              placeholder="Notes to Buyer"
+              class="block min-w-full text-sm font-normal mt-4 py-3.5 px-4 border rounded border-[#A4A4A4] text-[#212121A3]/[0.64] resize-none"
+            ></textarea>
+            <button
+              class="min-w-full h-10 text-white text-base font-bold leading-5 mt-4 rounded-full bg-[#1C58EE]"
+            >
+              Send to Buyer
+            </button>
+          </div>
+        </div>
+
+        <article
+          class="bg-white rounded overflow-hidden shadow-lg p-5 col-span-4 w-full mt-5"
+        >
+          <h5 class="font-bold mb-3 text-base">Promo Codes</h5>
+          <a href="">
+            <b class="flex items-center text-blue-800 text-sm"
+              >Click to apply today's promo
+              <svg
+                class="w-6 h-6 text-blue-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 12H5m14 0-4 4m4-4-4-4"
+                />
+              </svg>
+            </b>
+          </a>
+
+          <form class="mt-5">
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full p-4 h-[52px] ps-10 text-lg text-gray-900 border border-gray-800 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 placeholder:text-gray-800"
+                placeholder="Enter Code"
+                required
+              />
+              <button
+                type="submit"
+                class="text-blue-800 absolute end-2.5 bottom-[0.3rem] bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold text-sm px-5 py-2 rounded-full border-2 border-blue-800 hover:text-white"
+              >
+                Apply
+              </button>
+            </div>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <script>
+      const orderLevelCostLocationForm = document.getElementById(
+        "orderLevelContentForm"
+      );
+      const orderLevelCostLocationSwitch = document.getElementById(
+        "costLocationToggler"
+      );
+
+      toggleContent = () =>
+        (orderLevelCostLocationForm.style.display =
+          orderLevelCostLocationSwitch.checked ? "block" : "none");
+
+      orderLevelCostLocationSwitch.addEventListener("change", toggleContent);
+    </script>
+  </body>
+</html>
