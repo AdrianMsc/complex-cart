@@ -348,10 +348,10 @@
 
         <article class="bg-white rounded overflow-hidden mt-5">
           <div class="flex grid grid-cols-12 py-3 px-5">
-            <div class="col-span-2">
+            <div class="lg:col-span-2 md:col-span-2 col-span-3">
               <img src="./img/cachucha.png" alt="" class="w-[80%]" />
             </div>
-            <div class="col-span-7">
+            <div class="lg:col-span-7 md:col-span-7 col-span-9">
               <p class="font-bold text-[12px]">BRAND NAME</p>
 
               <p class="font-bold text-[14px]">
@@ -399,7 +399,7 @@
                 </label>
               </div>
             </div>
-            <div class="col-span-3">
+            <div class="lg:col-span-3 md:col-span-3 col-span-12">
               <div class="flex flex-col h-2/4">
                 <p class="flex text-[13px]">
                   Web Price
@@ -474,7 +474,7 @@
           </div>
 
           <div class="grid grid-cols-12 gap-2 px-5 py-3">
-            <div class="col-span-2 flex">
+            <div class="lg:col-span-2 md:col-span-2 col-span-6 flex">
               <label for="" class="font-bold mr-3">Qty</label>
               <input
                 type="text"
@@ -483,20 +483,30 @@
               />
             </div>
 
-            <select class="border rounded col-span-2 text-sm">
+            <select
+              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+            >
               <option value="1">Category 1</option>
             </select>
-            <select class="border rounded col-span-2 text-sm">
-              <option value="1">Category 1</option>
+            <select
+              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+            >
+              <option value="1">Category 2</option>
             </select>
-            <select class="border rounded col-span-2 text-sm">
-              <option value="1">Category 1</option>
+            <select
+              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+            >
+              <option value="1">Category 3</option>
             </select>
-            <select class="border rounded col-span-2 text-sm">
-              <option value="1">Category 1</option>
+            <select
+              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+            >
+              <option value="1">Category 4</option>
             </select>
-            <select class="border rounded col-span-2 text-sm">
-              <option value="1">Category 1</option>
+            <select
+              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+            >
+              <option value="1">Category 5</option>
             </select>
           </div>
         </article>
@@ -549,7 +559,7 @@
               <div class="items-center">
                 <p class="inline pr-1 text-sm font-normal">Ship to 78753</p>
                 <img
-                  src="info question.svg"
+                  src="./img/info-question.svg"
                   class="inline w-4 cursor-pointer"
                 />
                 <a
