@@ -9,10 +9,11 @@
       href="https://www.mscdirect.com/favicon.ico"
       type="image/x-icon"
     />
+
     <title>MSC POC</title>
   </head>
   <body class="bg-[#f2f2f2]">
-    <header class="bg-white overflow-hidden shadow-lg p-5 flex w-full">
+    <header class="bg-white overflow-hidden p-5 flex w-full">
       <a href="index.html">
         <img
           class="h-[40px]"
@@ -70,7 +71,7 @@
       </div>
     </div>
 
-    <section class="container grid grid-cols-12 gap-2 mx-auto p-3">
+    <section class="container grid grid-cols-12 gap-2 mx-auto px-3">
       <div class="lg:col-span-9 md:col-span-9 col-span-12">
         <!-- Cart Title -->
         <div class="min-w-full mx-auto">
@@ -258,7 +259,44 @@
             </div>
           </div>
         </div>
-        <article class="bg-white rounded overflow-hidden p-5 mt-5">
+      </div>
+      <div class="lg:col-span-3 md:col-span-3 col-span-12">
+        <article class="bg-white rounded overflow-hidden p-2 flex w-full mt-4">
+          <span class="flex w-full">
+            <svg
+              class="w-6 h-6 text-[#212121]/[.64] mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <span class="truncate w-4/5 text-sm">
+              Street Address, State, tax Exempt, other things here like this or
+              more
+            </span>
+
+            <a href="" class="ml-auto"
+              ><b class="text-[#0D3AA9] text-sm">Change</b></a
+            >
+          </span>
+        </article>
+      </div>
+    </section>
+
+    <section class="container grid grid-cols-12 gap-2 mx-auto px-3">
+      <div
+        class="lg:col-span-9 md:col-span-9 col-span-12 lg:order-1 md:order-1 order-2"
+      >
+        <article class="bg-white rounded overflow-hidden p-5 mt-3">
           <h4 class="font-bold flex">
             <label class="inline-flex items-center cursor-pointer">
               <input
@@ -281,7 +319,7 @@
             <div class="grid gird-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-2">
               <select
                 id="countries"
-                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+                class="bg-white border border-[#212121]/[.38] text-[#212121]/[.60] text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
               >
                 <option selected>Category 1</option>
                 <option>Category Option</option>
@@ -292,7 +330,7 @@
 
               <select
                 id="countries"
-                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+                class="bg-white border border-[#212121]/[.38] text-[#212121]/[.60] text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
               >
                 <option selected>Category 2</option>
                 <option>Category Option</option>
@@ -303,7 +341,7 @@
 
               <select
                 id="countries"
-                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+                class="bg-white border border-[#212121]/[.38] text-[#212121]/[.60] text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
               >
                 <option selected>Category 3</option>
                 <option>Category Option</option>
@@ -314,7 +352,7 @@
 
               <select
                 id="countries"
-                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+                class="bg-white border border-[#212121]/[.38] text-[#212121]/[.60] text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
               >
                 <option selected>Category 4</option>
                 <option>Category Option</option>
@@ -325,7 +363,7 @@
 
               <select
                 id="countries"
-                class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
+                class="bg-white border border-[#212121]/[.38] text-[#212121]/[.60] text-sm rounded focus:ring-blue-500 focus:border-blue-500 p-2.5 mr-3 max-h-9 py-1 mb-3"
               >
                 <option selected>Category 5</option>
                 <option>Category Option</option>
@@ -338,7 +376,7 @@
             <div class="flex justify-center bg-red mt-5">
               <button
                 type="button"
-                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-10 py-1.5 me-2 mb-2"
+                class="text-[#212121]/[.38] font-bold bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-sm px-10 py-1.5 me-2 mb-2"
               >
                 Apply to all
               </button>
@@ -348,10 +386,14 @@
 
         <article class="bg-white rounded overflow-hidden mt-5">
           <div class="flex grid grid-cols-12 py-3 px-5">
-            <div class="lg:col-span-2 md:col-span-2 col-span-3">
-              <img src="./img/cachucha.png" alt="" class="w-[80%]" />
+            <div class="lg:col-span-2 md:col-span-2 col-span-12">
+              <img
+                src="./img/cachucha.png"
+                alt=""
+                class="md:w-[80%] w-[25%] mx-auto"
+              />
             </div>
-            <div class="lg:col-span-7 md:col-span-7 col-span-9">
+            <div class="lg:col-span-7 md:col-span-7 col-span-12">
               <p class="font-bold text-[12px]">BRAND NAME</p>
 
               <p class="font-bold text-[14px]">
@@ -364,14 +406,29 @@
               </p>
 
               <p class="text-[14px]">
-                <img src="" alt="" />
-                <span class="text-[#0E754A] font-bold"> In Stock </span>
-                • Expected to arrive on
+                <span
+                  class="text-[#0E754A] font-bold lg:w-auto md:w-auto w-full lg:inline-flex md:inline-flex flex items-center"
+                >
+                  <img src="img/check.svg" alt="" class="mr-2" />
+                  In Stock
+                </span>
+
+                <span
+                  class="before:content-['•'] before:hidden before:md:inline"
+                >
+                  Expected to arrive on
+                </span>
+
                 <span class="font-bold">Thurs, June 9th</span>
               </p>
 
               <p class="text-[#0D3AA9] text-[12px] font-bold">
                 Compliance & Restrictions
+              </p>
+
+              <p class="text-[12px]">
+                Non-returnable, cannot be exported. Same-day shipping not
+                guaranteed. Extra shipping charges may apply.
               </p>
 
               <div class="flex items-center text-[13px]">
@@ -399,9 +456,13 @@
                 </label>
               </div>
             </div>
-            <div class="lg:col-span-3 md:col-span-3 col-span-12">
-              <div class="flex flex-col h-2/4">
-                <p class="flex text-[13px]">
+            <div
+              class="lg:col-span-3 md:col-span-3 col-span-12 grid grid-cols-12"
+            >
+              <div
+                class="flex flex-col m-h-2/4 col-span-12 order-2 md:order-1 lg:order-1 my-3 md:my-auto lg:my-auto"
+              >
+                <p class="flex text-[14px]">
                   Web Price
                   <span class="ml-auto">
                     $5.63
@@ -409,13 +470,15 @@
                   </span>
                 </p>
 
-                <p class="font-bold flex text-[13px]">
+                <p class="font-bold flex text-[14px]">
                   Total
                   <span class="ml-auto"> $22.56 </span>
                 </p>
               </div>
 
-              <div class="flex justify-center items-center h-2/4 p-2">
+              <div
+                class="flex justify-center items-center m-h-2/4 md:p-2 p-0 rounded mt-3 col-span-12 order-1 md:order-2 lg:order-2"
+              >
                 <div
                   class="bg-[#F1F5FE] p-2 flex items-center justify-center w-full rounded"
                 >
@@ -461,7 +524,7 @@
                   type="checkbox"
                   value=""
                   class="sr-only peer"
-                  id="costLocationToggler"
+                  id="overrideOrderLevelSwitch"
                 />
                 <div
                   class="relative w-9 h-5 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
@@ -474,78 +537,87 @@
           </div>
 
           <div class="grid grid-cols-12 gap-2 px-5 py-3">
-            <div class="lg:col-span-2 md:col-span-2 col-span-6 flex">
-              <label for="" class="font-bold mr-3">Qty</label>
+            <div
+              class="lg:col-span-2 md:col-span-2 col-span-12 flex mb-3 justify-center"
+            >
+              <label class="font-bold mr-3">Qty</label>
               <input
                 type="text"
-                class="border rounded w-full text-center"
+                class="border rounded w-full text-center md:max-w-[100%] max-w-[30%]"
                 value="1"
               />
             </div>
 
             <select
-              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+              class="border border-[#212121]/[.38] text-[#212121]/[.60] rounded lg:col-span-2 md:col-span-2 col-span-12 text-sm h-[28px] mb-3"
             >
               <option value="1">Category 1</option>
             </select>
             <select
-              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+              class="border border-[#212121]/[.38] text-[#212121]/[.60] rounded lg:col-span-2 md:col-span-2 col-span-12 text-sm h-[28px] mb-3"
             >
               <option value="1">Category 2</option>
             </select>
             <select
-              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+              class="border border-[#212121]/[.38] text-[#212121]/[.60] rounded lg:col-span-2 md:col-span-2 col-span-12 text-sm h-[28px] mb-3"
             >
               <option value="1">Category 3</option>
             </select>
             <select
-              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+              class="border border-[#212121]/[.38] text-[#212121]/[.60] rounded lg:col-span-2 md:col-span-2 col-span-12 text-sm h-[28px] mb-3"
             >
               <option value="1">Category 4</option>
             </select>
             <select
-              class="border rounded lg:col-span-2 md:col-span-2 col-span-6 text-sm"
+              class="border border-[#212121]/[.38] text-[#212121]/[.60] rounded lg:col-span-2 md:col-span-2 col-span-12 text-sm h-[28px] mb-3"
             >
               <option value="1">Category 5</option>
             </select>
           </div>
+          <div
+            id="slipItemSection"
+            class="hidden border p-3 flex justify-center"
+          >
+            <button
+              type="button"
+              class="text-[#212121]/[.38] font-bold bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-sm px-10 py-1.5 me-2 mb-2 flex items-center"
+            >
+              <img src="./img/add.svg" class="w-3" /> Add Slip
+            </button>
+
+            <button
+              type="button"
+              class="text-[#212121]/[.38] font-bold bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-sm px-10 py-1.5 me-2 mb-2 flex items-center"
+            >
+              <svg
+                class="w-6 h-6 text-[#212121]/[.38]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 12h14"
+                />
+              </svg>
+
+              Remove Slip
+            </button>
+          </div>
         </article>
       </div>
 
-      <div class="lg:col-span-3 md:col-span-3 col-span-12">
-        <article
-          class="bg-white rounded overflow-hidden shadow-lg p-2 flex w-full mt-4"
-        >
-          <span class="flex w-full">
-            <svg
-              class="w-6 h-6 text-[#212121]/[.64] mr-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-
-            <span class="truncate w-4/5 text-sm">
-              Street Address, State, tax Exempt, other things here like this or
-              more
-            </span>
-
-            <a href="" class="ml-auto"
-              ><b class="text-[#0D3AA9] text-sm">Change</b></a
-            >
-          </span>
-        </article>
-
+      <div
+        class="lg:col-span-3 md:col-span-3 col-span-12 lg:order-2 md:order-2 order-1"
+      >
         <!-- Order Sumary -->
-        <div class="w-full bg-white m-auto p-6 rounded mt-5">
+        <div class="w-full bg-white m-auto p-6 rounded mt-3">
           <div class="flex-row">
             <div class="flex justify-between mb-4">
               <p class="inline text-sm font-normal">Item Total</p>
@@ -598,9 +670,14 @@
             </button>
           </div>
         </div>
+      </div>
+    </section>
 
+    <section class="container grid grid-cols-12 gap-2 mx-auto px-3">
+      <div class="lg:col-span-9 md:col-span-9 col-span-12"></div>
+      <div class="lg:col-span-3 md:col-span-3 col-span-12">
         <article
-          class="bg-white rounded overflow-hidden shadow-lg p-5 col-span-4 w-full mt-5"
+          class="bg-white rounded overflow-hidden p-5 col-span-4 w-full mt-5"
         >
           <h5 class="font-bold mb-3 text-base">Promo Codes</h5>
           <a href="">

@@ -12,6 +12,15 @@ toggleContent = () =>
 
 orderLevelCostLocationSwitch.addEventListener("change", toggleContent);
 
+// ITEM LEVEL COSTO ALLOCATION
+toggleIOverrideOrderLevel = () => {
+  document.getElementById("slipItemSection").classList.toggle("hidden");
+};
+
+document
+  .getElementById("overrideOrderLevelSwitch")
+  .addEventListener("change", toggleIOverrideOrderLevel);
+
 //CART OPTIONS
 
 let cartOptionsButton = document.getElementById("co-button");
